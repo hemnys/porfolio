@@ -1,0 +1,130 @@
+:root {
+    --primary-color: #1b262c;
+    --secondary-color: #0f4c75;
+    --third-color: #3282b8;
+    --fourth-color: #bbe1fa;
+    --font: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font);
+    background-color: var(--primary-color);
+}
+
+@media screen and (max-width:768px) {
+    .header {
+        margin: 0;
+        background-color: var(--primary-color);
+        background-image: -webkit-linear-gradient(-80deg, var(--primary-color) 40%, var(--secondary-color) 40%);
+    }
+    .hero figure {
+        margin: 0;
+        padding: 0;
+    }
+    .hero img {
+        max-width: 350px;
+        width: 100%;
+    }
+    .section {
+        padding: 20px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section .section-header h2 {
+        color: var(--fourth-color);
+        font-size: 2em;
+    }
+    .section h3 {
+        font-size: 1.5em;
+        color: var(--fourth-color);
+    }
+    .section p {
+        color: var(--fourth-color);
+    }
+    .nav-bar ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+    }
+    .nav-bar ul li {
+        margin: 0 10px;
+    }
+    .nav-bar ul li a {
+        color: var(--fourth-color);
+        text-decoration: none;
+    }
+    .header .content h1 {
+        font-size: 3em;
+        color: var(--fourth-color);
+    }
+    .contact-form-item {
+        margin-bottom: 1em;
+    }
+    .contact-form-item input,
+    textarea,
+    button {
+        width: 100%;
+        background: transparent;
+        border: 1px solid var(--fourth-color);
+        box-sizing: border-box;
+    }
+    .contact-form-item input {
+        height: 40px;
+    }
+    .contact-form-item button {
+        color: var(--fourth-color);
+        padding: 20px;
+    }
+    .footer {
+        background-color: var(--third-color);
+        color: var(--fourth-color);
+        padding: 10px 0;
+        text-align: center;
+    }
+}
+
+
+/*
+.nav-bar {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-bar ul li {
+    margin: 0 10px;
+}
+
+.nav-bar ul li a {
+    color: var(--fourth-color);
+    text-decoration: none;
+}
+
+.section {
+    padding: 40px 60px;
+    display: flex;
+}
+
+.hero {
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hero .image {
+    width: 40%;
+}
+
+.hero .content {
+    color: var(--fourth-color);
+    width: 60%;
+}*/
